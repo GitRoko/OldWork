@@ -2322,6 +2322,7 @@ body {
   font-family: core-sans-regular,  sans-serif;
   font-size: 58px;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 5px;
   color: #ffffff;
   font-weight: 400;
@@ -2335,7 +2336,8 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4.95px;
-  line-height: 1; }
+  line-height: 1;
+  text-align: center; }
 
 .h3 {
   font-family: core-sans-bold, sans-serif;
@@ -2604,7 +2606,8 @@ body {
       color: #fff; }
 
 .feedback {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .feedback::before {
     content: '';
     position: absolute;
@@ -2622,22 +2625,69 @@ body {
     height: 100%;
     z-index: -1; }
   .feedback__contact {
-    display: inline-block;
-    width: 80%;
-    text-align: left; }
+    display: block; }
     .feedback__contact-title {
       letter-spacing: normal;
-      display: inline-block;
+      display: block;
       margin-top: 45px;
       margin-bottom: 90px; }
   .feedback__order {
-    display: inline-block;
+    display: block;
     padding-left: 60px; }
     .feedback__order-title {
       letter-spacing: normal;
       display: inline-block;
       margin-top: 45px;
       margin-bottom: 40px; }
+
+.contact-list {
+  list-style: none;
+  margin-left: 10px; }
+  .contact-list__item {
+    position: relative;
+    display: block;
+    min-height: 30px;
+    margin-bottom: 20px; }
+    .contact-list__item-tel:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+      background: url(../img/icon-tel.png) center center no-repeat; }
+    .contact-list__item-email:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+      background: url(../img/icon-email.png) center center no-repeat; }
+    .contact-list__item-fb:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -40px;
+      width: 19px;
+      height: 31px;
+      background: url(../img/icon-fb.png) center center no-repeat; }
+    .contact-list__item-inst:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+      background: url(../img/icon-inst.png) center center no-repeat; }
+  .contact-list__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    line-height: 30px; }
+    .contact-list__link:hover {
+      color: #000; }
 
 .order-form__label {
   width: 100%;
@@ -2703,53 +2753,6 @@ body {
   font-size: 24px;
   color: #8b8b8b; }
 
-.contact-list {
-  list-style: none; }
-  .contact-list__item {
-    position: relative;
-    display: block;
-    min-height: 30px;
-    margin-bottom: 20px; }
-    .contact-list__item-tel:before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: -45px;
-      width: 30px;
-      height: 30px;
-      background: url(../img/icon-tel.png) center center no-repeat; }
-    .contact-list__item-email:before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: -45px;
-      width: 30px;
-      height: 30px;
-      background: url(../img/icon-email.png) center center no-repeat; }
-    .contact-list__item-fb:before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: -40px;
-      width: 19px;
-      height: 31px;
-      background: url(../img/icon-fb.png) center center no-repeat; }
-    .contact-list__item-inst:before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: -45px;
-      width: 30px;
-      height: 30px;
-      background: url(../img/icon-inst.png) center center no-repeat; }
-  .contact-list__link {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    font-size: 24px; }
-    .contact-list__link:hover {
-      color: #000; }
-
 .no-padding {
   padding: 0; }
 
@@ -2787,4 +2790,79 @@ body {
 
 /* End main style  */
 /*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  .contact-list__link {
+    font-size: 18px; } }
+
+@media (max-width: 767.98px) {
+  .h2 {
+    font-size: 36px; }
+  .feedback::before {
+    background-color: transparent; }
+  .feedback::after {
+    background-color: transparent; }
+  .feedback .bg-contact {
+    background-color: #dbdbdb;
+    position: relative; }
+    .feedback .bg-contact::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #dbdbdb;
+      z-index: -1; }
+    .feedback .bg-contact::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #dbdbdb;
+      z-index: -1; }
+  .feedback .bg-order {
+    background-color: #555555;
+    position: relative; }
+    .feedback .bg-order::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #555555;
+      z-index: -1; }
+    .feedback .bg-order::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #555555;
+      z-index: -1; }
+  .feedback__order {
+    padding-left: 40px; }
+  .feedback__contact {
+    padding-left: 40px; }
+  .footer .all-rights, .footer .copyrights {
+    float: none; } }
+
+@media (max-width: 575.98px) {
+  .hero .h1 {
+    font-size: 42px;
+    margin-top: 50px; }
+  .hero .btn-order {
+    font-size: 18px; }
+  .reviews__date {
+    top: 5px; }
+  .feedback__contact-title {
+    margin-bottom: 50px; }
+  .feedback__order {
+    padding-left: 20px; }
+  .feedback__contact {
+    padding-left: 20px; } }
+
 /*==========  Mobile First  ==========*/
