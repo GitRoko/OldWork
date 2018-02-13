@@ -2254,19 +2254,19 @@ html {
   max-height: 100% !important; }
 
 ::-webkit-input-placeholder {
-  color: #666; }
+  color: #999; }
 
 ::-moz-placeholder {
-  color: #666; }
+  color: #999; }
 
 :-ms-input-placeholder {
-  color: #666; }
+  color: #999; }
 
 ::-ms-input-placeholder {
-  color: #666; }
+  color: #999; }
 
 ::placeholder {
-  color: #666; }
+  color: #999; }
 
 ::-moz-selection {
   background-color: orange;
@@ -2354,9 +2354,8 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .btn-order:hover {
+  .btn-order:hover, .btn-order:active {
     background-color: #ffffff;
-    border-color: #817168;
     text-decoration: none;
     color: #817168; }
 
@@ -2370,6 +2369,7 @@ body {
 
 .portfolio__item {
   position: relative;
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px; }
   .portfolio__item .portfolio__img {
@@ -2404,9 +2404,10 @@ body {
   border-left: none;
   border-top: none;
   border-right: none; }
-  .link-more:hover {
+  .link-more:hover, .link-more:active {
     text-decoration: none;
-    color: #817168; }
+    color: #2d2e45;
+    border-color: #2d2e45; }
 
 .reviews {
   margin-bottom: 70px; }
@@ -2449,7 +2450,7 @@ body {
     transition: all 0.3s ease;
     float: right;
     text-align: center; }
-    .reviews__link-project:hover {
+    .reviews__link-project:hover, .reviews__link-project:active {
       background-color: #000;
       text-decoration: none;
       color: #fff; }
@@ -2586,7 +2587,7 @@ body {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .stages__btn-call:hover {
+    .stages__btn-call:hover, .stages__btn-call:active {
       background-color: #000;
       text-decoration: none;
       color: #fff; }
@@ -2624,7 +2625,8 @@ body {
       letter-spacing: normal;
       display: inline-block;
       margin-top: 45px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      color: #ffffff; }
 
 .contact-list {
   list-style: none;
@@ -2737,7 +2739,7 @@ body {
   padding-left: 45px;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #8b8b8b; }
+  color: #ffffff; }
 
 .no-padding {
   padding: 0; }
