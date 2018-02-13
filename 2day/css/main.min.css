@@ -1,18 +1,4 @@
 @font-face {
-  font-family: "roboto-example";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "roboto-example";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
-
-@font-face {
   font-family: "core-sans-light";
   font-weight: normal;
   font-style: normal;
@@ -2847,21 +2833,35 @@ body {
     padding-left: 40px; }
   .feedback__contact {
     padding-left: 40px; }
+    .feedback__contact .contact-list__link {
+      font-size: 16px; }
   .footer .all-rights, .footer .copyrights {
     float: none; } }
 
 @media (max-width: 575.98px) {
+  .h2 {
+    line-height: 1.2; }
   .hero .h1 {
     font-size: 42px;
     margin-top: 50px; }
   .hero .btn-order {
-    font-size: 18px; }
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.2; }
+  .reviews__img {
+    margin: 0 auto; }
   .reviews__date {
     top: 5px; }
+  .reviews__link-project {
+    float: none;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto; }
   .feedback__contact-title {
     margin-bottom: 50px; }
   .feedback__order {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .feedback__contact {
     padding-left: 20px; } }
 
