@@ -2775,6 +2775,8 @@ body {
   .footer .copyrights {
     font-size: 24px;
     float: right; }
+    .footer .copyrights .g {
+      font-size: 21px; }
 
 /* End main style  */
 /*==========  Desktop First  ==========*/
