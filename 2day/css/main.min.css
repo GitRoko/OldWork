@@ -9909,6 +9909,11 @@ body {
 
 .portfolio {
   margin-bottom: 70px; }
+  .portfolio__text {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 25px;
+    margin-bottom: 30px; }
 
 .portfolio__title {
   display: inline-block;
@@ -10329,17 +10334,17 @@ body {
 
 /* End main style  */
 /* -------------- Start services-page style ------------- */
-.services-page .header .navbar-brand {
+.header .navbar-brand {
   padding: 0;
   padding-bottom: 10px; }
-  .services-page .header .navbar-brand .logo {
+  .header .navbar-brand .logo {
     float: left; }
-    .services-page .header .navbar-brand .logo__brand-img {
+    .header .navbar-brand .logo__brand-img {
       max-width: 100px; }
 
-.services-page .header .callback {
+.header .callback {
   margin-top: 10px; }
-  .services-page .header .callback__list-items {
+  .header .callback__list-items {
     list-style: none;
     display: -webkit-box;
     display: -webkit-flex;
@@ -10354,15 +10359,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 10px; }
-  .services-page .header .callback__list-item {
+  .header .callback__list-item {
     display: inline-block; }
-  .services-page .header .callback__list-link {
+  .header .callback__list-link {
     margin-right: 30px;
     color: #000;
     line-height: 1.6; }
-    .services-page .header .callback__list-link:hover {
+    .header .callback__list-link:hover {
       color: #000; }
-  .services-page .header .callback__link-tel {
+  .header .callback__link-tel {
     display: inline-block;
     max-width: 100%;
     text-decoration: none;
@@ -10379,22 +10384,23 @@ body {
     transition: all 0.3s ease;
     float: right;
     text-align: center; }
-    .services-page .header .callback__link-tel:hover {
+    .header .callback__link-tel:hover {
       background-color: #000;
       text-decoration: none;
       color: #fff; }
 
-.services-page .header .navbar {
+.header .navbar {
   padding: 0; }
-  .services-page .header .navbar .navbar-toggler {
+  .header .navbar .navbar-toggler {
     color: #000;
     outline: #000;
-    border: 2px solid #000;
+    border: 0;
     -webkit-border-radius: 0;
-            border-radius: 0; }
-    .services-page .header .navbar .navbar-toggler-icon {
+            border-radius: 0;
+    padding: 0.25rem 0.45rem; }
+    .header .navbar .navbar-toggler-icon {
       background-image: url(../img/humburger.svg); }
-  .services-page .header .navbar .nav-link {
+  .header .navbar .nav-link {
     color: #000;
     font-family: core-sans-bold, sans-serif;
     font-size: 20px;
@@ -10404,14 +10410,17 @@ body {
 
 .services-page .services {
   margin-top: 30px; }
-  .services-page .services__order-title {
+
+.order-diz {
+  margin-bottom: 50px; }
+  .order-diz .order-title {
     font-weight: 800;
     text-transform: none;
     margin-bottom: 0;
     line-height: 1.3; }
-  .services-page .services .order-diz {
+  .order-diz .order-diz {
     margin-top: 30px; }
-  .services-page .services .order-diz-form {
+  .order-diz .order-diz-form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -10424,7 +10433,7 @@ body {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
-    .services-page .services .order-diz-form__input {
+    .order-diz .order-diz-form__input {
       position: relative;
       display: block;
       max-width: 450px;
@@ -10440,10 +10449,10 @@ body {
       font-size: 20px;
       color: #000;
       width: 300px; }
-    .services-page .services .order-diz-form__label {
+    .order-diz .order-diz-form__label {
       margin-bottom: 0;
       margin-right: 20px; }
-    .services-page .services .order-diz-form__submit {
+    .order-diz .order-diz-form__submit {
       font-family: core-sans-bold, sans-serif;
       font-size: 16px;
       text-transform: uppercase;
@@ -10455,24 +10464,82 @@ body {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-      .services-page .services .order-diz-form__submit:hover {
+      .order-diz .order-diz-form__submit:hover {
         color: #fff;
         background-color: #000; }
 
 /* --------------- End services-page style  -------------- */
+/* -------------- Start 404 style ------------- */
+.error-404 {
+  text-align: center; }
+  .error-404__title {
+    font-family: core-sans-light, sans-serif;
+    font-size: 120px;
+    margin-bottom: 30px; }
+  .error-404__text {
+    font-family: core-sans-bold, sans-serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 1.2; }
+  .error-404__link-index {
+    font-family: core-sans-bold, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #000;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .error-404__link-index:hover {
+      color: #fff;
+      background-color: #000; }
+
+/* --------------- End 404 style  -------------- */
+/* -------------- Start About style ------------- */
+.about__title {
+  margin: 50px 0; }
+
+.about__block {
+  margin-bottom: 50px; }
+
+.about__caption {
+  text-transform: none;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.about__text {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 20px; }
+
+.about__slogan {
+  font-family: core-sans-bold, sans-serif;
+  font-size: 24px;
+  line-height: 1.2; }
+
+/* --------------End About style ------------- */
 /*==========  Desktop First  ==========*/
 @media (max-width: 991.98px) {
   .contact-list__link {
     font-size: 18px; }
-  .services-page .header .navbar-brand {
-    margin-top: 10px; }
-  .services-page .header .navbar .navbar-nav {
+  .header .navbar-brand {
+    margin-top: 25px; }
+    .header .navbar-brand .logo__brand-img {
+      max-width: 70px; }
+  .header .navbar .navbar-nav {
     margin-top: 30px; }
-    .services-page .header .navbar .navbar-nav .nav-item {
+    .header .navbar .navbar-nav .nav-item {
       text-align: right;
       padding: 5px 20px; }
-    .services-page .header .navbar .navbar-nav .nav-link:hover {
-      text-decoration: underline; } }
+    .header .navbar .navbar-nav .nav-link:hover {
+      text-decoration: underline; }
+  .order-diz .order-title {
+    text-align: center; } }
 
 @media (max-width: 767.98px) {
   .h2 {
@@ -10562,17 +10629,17 @@ body {
 /*==========  Mobile First  ==========*/
 /*==========  Between media  ==========*/
 @media (max-width: 767.98px) {
-  .services-page .callback {
+  .callback {
     display: none; }
-  .services-page .navbar {
+  .header .navbar {
     margin-top: 30px;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  .services-page .services__order-title {
+  .order-diz .order-title {
     margin-bottom: 0px; }
-  .services-page .services .order-diz-form {
+  .order-diz .order-diz-form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -10588,57 +10655,79 @@ body {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
-    .services-page .services .order-diz-form__label {
+    .order-diz .order-diz-form__label {
       display: block;
       margin: 20px 0;
       width: 100%; }
-    .services-page .services .order-diz-form__input {
+    .order-diz .order-diz-form__input {
       display: block;
       margin: 0 auto; }
-    .services-page .services .order-diz-form__submit {
-      display: block; } }
+    .order-diz .order-diz-form__submit {
+      display: block; }
+  .error-404 {
+    margin-top: 0; }
+    .error-404__title {
+      margin-top: 50px;
+      font-size: 120px; }
+    .error-404__link-index {
+      margin-bottom: 50px; }
+  .about__title {
+    margin: 20px 0; }
+  .about__img {
+    margin: 30px auto; } }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .services-page .callback {
+  .callback {
     display: none; }
-  .services-page .navbar {
+  .header .navbar {
     margin-top: 30px;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  .services-page .services {
+  .services {
     margin-top: 30px; }
-    .services-page .services__order-title {
-      margin-bottom: 0px; }
-    .services-page .services .order-diz-form {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
-      .services-page .services .order-diz-form__label {
-        display: block;
-        margin: 20px 0;
-        width: 100%; }
-      .services-page .services .order-diz-form__input {
-        display: block;
-        margin: 0 auto; }
-      .services-page .services .order-diz-form__submit {
-        display: block; } }
+  .order-diz .order-title {
+    margin-bottom: 0px; }
+  .order-diz .order-diz-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .order-diz .order-diz-form__label {
+      display: block;
+      margin: 20px 0;
+      width: 100%; }
+    .order-diz .order-diz-form__input {
+      display: block;
+      margin: 0 auto; }
+    .order-diz .order-diz-form__submit {
+      display: block; }
+  .error-404 {
+    margin-top: 0; }
+    .error-404__title {
+      margin-top: 50px;
+      font-size: 120px; }
+    .error-404__link-index {
+      margin-bottom: 50px; }
+  .about__title {
+    margin: 20px 0; }
+  .about__img {
+    margin: 30px auto; } }
 
 /*==========  Only media  ==========*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .services-page .header .navbar .nav-link {
+  .header .navbar .nav-link {
     font-size: 18px;
     margin-left: 20px; } }
